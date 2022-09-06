@@ -1,0 +1,18 @@
+2022-09-01 10:58:30.245  INFO 15316 --- [main] com.project.ProjectApplicationTests      : Starting ProjectApplicationTests using Java 17.0.4 on DESKTOP-49IDSSC with PID 15316 (started by Shreyas in D:\PROJECTS\Fullstack\User\project)
+2022-09-01 10:58:30.258  INFO 15316 --- [main] com.project.ProjectApplicationTests      : No active profile set, falling back to 1 default profile: "default"
+2022-09-01 10:58:33.244  INFO 15316 --- [main] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2022-09-01 10:58:33.496  INFO 15316 --- [main] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 220 ms. Found 1 JPA repository interfaces.
+2022-09-01 10:58:35.176  INFO 15316 --- [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Starting...
+2022-09-01 10:58:36.402  INFO 15316 --- [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Start completed.
+2022-09-01 10:58:36.914  INFO 15316 --- [main] o.hibernate.jpa.internal.util.LogHelper  : HHH000204: Processing PersistenceUnitInfo [name: default]
+2022-09-01 10:58:37.232  INFO 15316 --- [main] org.hibernate.Version                    : HHH000412: Hibernate ORM core version 5.6.10.Final
+2022-09-01 10:58:37.909  INFO 15316 --- [main] o.hibernate.annotations.common.Version   : HCANN000001: Hibernate Commons Annotations {5.1.2.Final}
+2022-09-01 10:58:38.361  INFO 15316 --- [main] org.hibernate.dialect.Dialect            : HHH000400: Using dialect: org.hibernate.dialect.MySQL8Dialect
+2022-09-01 10:58:39.863  INFO 15316 --- [main] o.h.e.t.j.p.i.JtaPlatformInitiator       : HHH000490: Using JtaPlatform implementation: [org.hibernate.engine.transaction.jta.platform.internal.NoJtaPlatform]
+2022-09-01 10:58:39.889  INFO 15316 --- [main] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
+2022-09-01 10:58:41.752  WARN 15316 --- [main] JpaBaseConfiguration$JpaWebConfiguration : spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2022-09-01 10:58:42.641  INFO 15316 --- [main] o.s.b.a.w.s.WelcomePageHandlerMapping    : Adding welcome page: class path resource [static/index.html]
+2022-09-01 10:58:46.158  INFO 15316 --- [main] com.project.ProjectApplicationTests      : Started ProjectApplicationTests in 17.095 seconds (JVM running for 20.134)
+2022-09-01 10:58:46.932  INFO 15316 --- [SpringApplicationShutdownHook] j.LocalContainerEntityManagerFactoryBean : Closing JPA EntityManagerFactory for persistence unit 'default'
+2022-09-01 10:58:46.941  INFO 15316 --- [SpringApplicationShutdownHook] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown initiated...
+2022-09-01 10:58:46.989  INFO 15316 --- [SpringApplicationShutdownHook] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown completed.
