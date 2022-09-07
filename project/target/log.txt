@@ -1,54 +1,35 @@
-2022-09-01 11:02:34.771  INFO 9760 --- [main] com.project.ProjectApplication           : Starting ProjectApplication v0.0.1-SNAPSHOT using Java 17.0.4 on DESKTOP-49IDSSC with PID 9760 (D:\PROJECTS\Fullstack\User\project\target\project-0.0.1-SNAPSHOT.jar started by Shreyas in D:\PROJECTS\Fullstack\User\project\target)
-2022-09-01 11:02:34.818  INFO 9760 --- [main] com.project.ProjectApplication           : No active profile set, falling back to 1 default profile: "default"
-2022-09-01 11:02:37.411  INFO 9760 --- [main] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data JPA repositories in DEFAULT mode.
-2022-09-01 11:02:38.001  INFO 9760 --- [main] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 549 ms. Found 1 JPA repository interfaces.
-2022-09-01 11:02:40.047  INFO 9760 --- [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port(s): 8080 (http)
-2022-09-01 11:02:40.088  INFO 9760 --- [main] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
-2022-09-01 11:02:40.090  INFO 9760 --- [main] org.apache.catalina.core.StandardEngine  : Starting Servlet engine: [Apache Tomcat/9.0.65]
-2022-09-01 11:02:40.339  INFO 9760 --- [main] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
-2022-09-01 11:02:40.341  INFO 9760 --- [main] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 5235 ms
-2022-09-01 11:02:40.894  INFO 9760 --- [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Starting...
-2022-09-01 11:02:42.052  INFO 9760 --- [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Start completed.
-2022-09-01 11:02:42.266  INFO 9760 --- [main] o.hibernate.jpa.internal.util.LogHelper  : HHH000204: Processing PersistenceUnitInfo [name: default]
-2022-09-01 11:02:42.677  INFO 9760 --- [main] org.hibernate.Version                    : HHH000412: Hibernate ORM core version 5.6.10.Final
-2022-09-01 11:02:43.242  INFO 9760 --- [main] o.hibernate.annotations.common.Version   : HCANN000001: Hibernate Commons Annotations {5.1.2.Final}
-2022-09-01 11:02:43.649  INFO 9760 --- [main] org.hibernate.dialect.Dialect            : HHH000400: Using dialect: org.hibernate.dialect.MySQL8Dialect
-2022-09-01 11:02:45.256  INFO 9760 --- [main] o.h.e.t.j.p.i.JtaPlatformInitiator       : HHH000490: Using JtaPlatform implementation: [org.hibernate.engine.transaction.jta.platform.internal.NoJtaPlatform]
-2022-09-01 11:02:45.285  INFO 9760 --- [main] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
-2022-09-01 11:02:46.697  WARN 9760 --- [main] JpaBaseConfiguration$JpaWebConfiguration : spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
-2022-09-01 11:02:47.348  INFO 9760 --- [main] o.s.b.a.w.s.WelcomePageHandlerMapping    : Adding welcome page: class path resource [static/index.html]
-2022-09-01 11:02:49.144  INFO 9760 --- [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port(s): 8080 (http) with context path ''
-2022-09-01 11:02:49.179  INFO 9760 --- [main] com.project.ProjectApplication           : Started ProjectApplication in 16.221 seconds (JVM running for 17.734)
-2022-09-01 11:03:09.973  INFO 9760 --- [http-nio-8080-exec-1] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring DispatcherServlet 'dispatcherServlet'
-2022-09-01 11:03:09.976  INFO 9760 --- [http-nio-8080-exec-1] o.s.web.servlet.DispatcherServlet        : Initializing Servlet 'dispatcherServlet'
-2022-09-01 11:03:09.981  INFO 9760 --- [http-nio-8080-exec-1] o.s.web.servlet.DispatcherServlet        : Completed initialization in 4 ms
-2022-09-01 11:03:12.934  INFO 9760 --- [http-nio-8080-exec-9] o.springdoc.api.AbstractOpenApiResource  : Init duration for springdoc-openapi is: 1155 ms
-2022-09-01 11:03:18.315  INFO 9760 --- [http-nio-8080-exec-10] com.project.service.UserServiceImpl      : Retrieving all the users..
-2022-09-01 11:03:18.317  INFO 9760 --- [http-nio-8080-exec-10] com.project.service.UserServiceImpl      : admin username : shreyas
-2022-09-01 11:03:19.427  INFO 9760 --- [http-nio-8080-exec-10] com.project.service.UserServiceImpl      : List of Users: 
-2022-09-01 11:03:19.445  INFO 9760 --- [http-nio-8080-exec-10] com.project.service.UserServiceImpl      : Response <200 OK OK,[User(id=2, name=teju, age=22, email=teju@gmail.com, phone=8574859685), User(id=3, name=sourabh, age=25, email=sourabh@gmail.com, phone=857485968), User(id=4, name=shreyas, age=22, email=shreyas@gmail.com, phone=8574859685), User(id=5, name=pooja, age=22, email=pooja@gmail@gmail.com, phone=7848596857)],[]>
-2022-09-01 11:03:51.376  INFO 9760 --- [http-nio-8080-exec-3] com.project.service.UserServiceImpl      : Request 2
-2022-09-01 11:03:51.484  INFO 9760 --- [http-nio-8080-exec-3] com.project.service.UserServiceImpl      : Response 2
-2022-09-01 11:03:58.422  INFO 9760 --- [http-nio-8080-exec-8] com.project.service.UserServiceImpl      : Request 2
-2022-09-01 11:03:58.424  INFO 9760 --- [http-nio-8080-exec-8] com.project.service.UserServiceImpl      : Updating the user 2
-2022-09-01 11:03:58.621  INFO 9760 --- [http-nio-8080-exec-8] com.project.service.UserServiceImpl      : Response User(id=2, name=teju kk, age=22, email=teju@gmail.com, phone=8574859685)
-2022-09-01 11:03:58.623  INFO 9760 --- [http-nio-8080-exec-8] com.project.service.UserServiceImpl      : Response <200 OK OK,User(id=2, name=teju kk, age=22, email=teju@gmail.com, phone=8574859685),[]>
-2022-09-01 11:04:00.852  INFO 9760 --- [http-nio-8080-exec-5] com.project.service.UserServiceImpl      : Retrieving all the users..
-2022-09-01 11:04:00.859  INFO 9760 --- [http-nio-8080-exec-5] com.project.service.UserServiceImpl      : admin username : shreyas
-2022-09-01 11:04:00.879  INFO 9760 --- [http-nio-8080-exec-5] com.project.service.UserServiceImpl      : List of Users: 
-2022-09-01 11:04:00.880  INFO 9760 --- [http-nio-8080-exec-5] com.project.service.UserServiceImpl      : Response <200 OK OK,[User(id=2, name=teju kk, age=22, email=teju@gmail.com, phone=8574859685), User(id=3, name=sourabh, age=25, email=sourabh@gmail.com, phone=857485968), User(id=4, name=shreyas, age=22, email=shreyas@gmail.com, phone=8574859685), User(id=5, name=pooja, age=22, email=pooja@gmail@gmail.com, phone=7848596857)],[]>
-2022-09-01 11:16:28.994  INFO 9760 --- [http-nio-8080-exec-2] com.project.service.UserServiceImpl      : Request 5
-2022-09-01 11:16:29.015  INFO 9760 --- [http-nio-8080-exec-2] com.project.service.UserServiceImpl      : Deleting the user 5
-2022-09-01 11:16:29.582  INFO 9760 --- [http-nio-8080-exec-2] com.project.service.UserServiceImpl      : Deleted successfully
-2022-09-01 11:16:29.584  INFO 9760 --- [http-nio-8080-exec-2] com.project.service.UserServiceImpl      : Response <200 OK OK,Deleted,[]>
-2022-09-01 11:16:31.479  INFO 9760 --- [http-nio-8080-exec-6] com.project.service.UserServiceImpl      : Retrieving all the users..
-2022-09-01 11:16:31.488  INFO 9760 --- [http-nio-8080-exec-6] com.project.service.UserServiceImpl      : admin username : shreyas
-2022-09-01 11:16:31.533  INFO 9760 --- [http-nio-8080-exec-6] com.project.service.UserServiceImpl      : List of Users: 
-2022-09-01 11:16:31.534  INFO 9760 --- [http-nio-8080-exec-6] com.project.service.UserServiceImpl      : Response <200 OK OK,[User(id=2, name=teju kk, age=22, email=teju@gmail.com, phone=8574859685), User(id=3, name=sourabh, age=25, email=sourabh@gmail.com, phone=857485968), User(id=4, name=shreyas, age=22, email=shreyas@gmail.com, phone=8574859685)],[]>
-2022-09-01 11:43:56.474  INFO 9760 --- [http-nio-8080-exec-3] com.project.service.UserServiceImpl      : Retrieving all the users..
-2022-09-01 11:43:56.778  INFO 9760 --- [http-nio-8080-exec-3] com.project.service.UserServiceImpl      : admin username : shreyas
-2022-09-01 11:43:56.986  INFO 9760 --- [http-nio-8080-exec-3] com.project.service.UserServiceImpl      : List of Users: 
-2022-09-01 11:43:56.990  INFO 9760 --- [http-nio-8080-exec-3] com.project.service.UserServiceImpl      : Response <200 OK OK,[User(id=2, name=teju kk, age=22, email=teju@gmail.com, phone=8574859685), User(id=3, name=sourabh, age=25, email=sourabh@gmail.com, phone=857485968), User(id=4, name=shreyas, age=22, email=shreyas@gmail.com, phone=8574859685)],[]>
-2022-09-01 11:44:00.765  INFO 9760 --- [SpringApplicationShutdownHook] j.LocalContainerEntityManagerFactoryBean : Closing JPA EntityManagerFactory for persistence unit 'default'
-2022-09-01 11:44:00.809  INFO 9760 --- [SpringApplicationShutdownHook] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown initiated...
-2022-09-01 11:44:00.880  INFO 9760 --- [SpringApplicationShutdownHook] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown completed.
+2022-09-06 17:09:18.540  INFO 9424 --- [main] com.project.ProjectApplication           : Starting ProjectApplication v0.0.1-SNAPSHOT using Java 17.0.4 on DESKTOP-49IDSSC with PID 9424 (D:\PROJECTS\Fullstack\User\project\target\project-0.0.1-SNAPSHOT.jar started by Shreyas in D:\PROJECTS\Fullstack\User\project\target)
+2022-09-06 17:09:18.583  INFO 9424 --- [main] com.project.ProjectApplication           : No active profile set, falling back to 1 default profile: "default"
+2022-09-06 17:09:23.158  INFO 9424 --- [main] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2022-09-06 17:09:23.351  INFO 9424 --- [main] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 129 ms. Found 1 JPA repository interfaces.
+2022-09-06 17:09:26.286  INFO 9424 --- [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port(s): 8080 (http)
+2022-09-06 17:09:26.344  INFO 9424 --- [main] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2022-09-06 17:09:26.353  INFO 9424 --- [main] org.apache.catalina.core.StandardEngine  : Starting Servlet engine: [Apache Tomcat/9.0.65]
+2022-09-06 17:09:26.670  INFO 9424 --- [main] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2022-09-06 17:09:26.672  INFO 9424 --- [main] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 7802 ms
+2022-09-06 17:09:27.499  INFO 9424 --- [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Starting...
+2022-09-06 17:09:28.969  INFO 9424 --- [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Start completed.
+2022-09-06 17:09:29.553  INFO 9424 --- [main] o.hibernate.jpa.internal.util.LogHelper  : HHH000204: Processing PersistenceUnitInfo [name: default]
+2022-09-06 17:09:30.051  INFO 9424 --- [main] org.hibernate.Version                    : HHH000412: Hibernate ORM core version 5.6.10.Final
+2022-09-06 17:09:30.919  INFO 9424 --- [main] o.hibernate.annotations.common.Version   : HCANN000001: Hibernate Commons Annotations {5.1.2.Final}
+2022-09-06 17:09:31.576  INFO 9424 --- [main] org.hibernate.dialect.Dialect            : HHH000400: Using dialect: org.hibernate.dialect.MySQL8Dialect
+2022-09-06 17:09:33.875  INFO 9424 --- [main] o.h.e.t.j.p.i.JtaPlatformInitiator       : HHH000490: Using JtaPlatform implementation: [org.hibernate.engine.transaction.jta.platform.internal.NoJtaPlatform]
+2022-09-06 17:09:33.903  INFO 9424 --- [main] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
+2022-09-06 17:09:36.102  WARN 9424 --- [main] JpaBaseConfiguration$JpaWebConfiguration : spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2022-09-06 17:09:36.912  INFO 9424 --- [main] o.s.b.a.w.s.WelcomePageHandlerMapping    : Adding welcome page: class path resource [static/index.html]
+2022-09-06 17:09:39.808  INFO 9424 --- [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port(s): 8080 (http) with context path ''
+2022-09-06 17:09:39.852  INFO 9424 --- [main] com.project.ProjectApplication           : Started ProjectApplication in 23.853 seconds (JVM running for 26.362)
+2022-09-06 17:09:55.733  INFO 9424 --- [http-nio-8080-exec-1] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring DispatcherServlet 'dispatcherServlet'
+2022-09-06 17:09:55.755  INFO 9424 --- [http-nio-8080-exec-1] o.s.web.servlet.DispatcherServlet        : Initializing Servlet 'dispatcherServlet'
+2022-09-06 17:09:55.764  INFO 9424 --- [http-nio-8080-exec-1] o.s.web.servlet.DispatcherServlet        : Completed initialization in 3 ms
+2022-09-06 17:09:57.856  INFO 9424 --- [http-nio-8080-exec-6] com.project.service.UserServiceImpl      : Retrieving all the users..
+2022-09-06 17:09:57.870  INFO 9424 --- [http-nio-8080-exec-6] com.project.service.UserServiceImpl      : admin username : shreyas
+2022-09-06 17:09:59.227  INFO 9424 --- [http-nio-8080-exec-6] com.project.service.UserServiceImpl      : List of Users: 
+2022-09-06 17:09:59.252  INFO 9424 --- [http-nio-8080-exec-6] com.project.service.UserServiceImpl      : Response <200 OK OK,[User(id=2, name=teju kk, age=22, email=teju@gmail.com, phone=8574859685), User(id=3, name=sourabh, age=25, email=sourabh@gmail.com, phone=857485968), User(id=4, name=shreyas, age=22, email=shreyas@gmail.com, phone=8574859685)],[]>
+2022-09-06 17:10:12.449  INFO 9424 --- [http-nio-8080-exec-1] com.project.service.UserServiceImpl      : Retrieving all the users..
+2022-09-06 17:10:12.453  INFO 9424 --- [http-nio-8080-exec-1] com.project.service.UserServiceImpl      : admin username : shreyas
+2022-09-06 17:10:12.475  INFO 9424 --- [http-nio-8080-exec-1] com.project.service.UserServiceImpl      : List of Users: 
+2022-09-06 17:10:12.489  INFO 9424 --- [http-nio-8080-exec-1] com.project.service.UserServiceImpl      : Response <200 OK OK,[User(id=2, name=teju kk, age=22, email=teju@gmail.com, phone=8574859685), User(id=3, name=sourabh, age=25, email=sourabh@gmail.com, phone=857485968), User(id=4, name=shreyas, age=22, email=shreyas@gmail.com, phone=8574859685)],[]>
+2022-09-06 17:10:15.978  INFO 9424 --- [SpringApplicationShutdownHook] j.LocalContainerEntityManagerFactoryBean : Closing JPA EntityManagerFactory for persistence unit 'default'
+2022-09-06 17:10:15.986  INFO 9424 --- [SpringApplicationShutdownHook] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown initiated...
+2022-09-06 17:10:16.021  INFO 9424 --- [SpringApplicationShutdownHook] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown completed.
