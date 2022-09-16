@@ -1,0 +1,23 @@
+spring:
+  datasource:
+    url: jdbc:mysql://sql6.freesqldatabase.com/sql6519175
+    username: sql6519175
+    password: mJW6DLFYkP
+  jpa:
+    hibernate:
+      ddl-auto: update
+    show-sql: true
+  output:
+    ansi:
+      enabled: ALWAYS
+logging:
+  level:
+    root: info
+  file:
+    path: /
+    name: log.txt
+
+admin:
+  username: shreyas
+  password: shreyas123
+  email: shreyas@gmail.com
