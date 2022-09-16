@@ -5,8 +5,12 @@ import com.project.entity.User;
 import com.project.exception.UserNotFoundException;
 import com.project.service.UserService;
 import com.project.service.UserServiceImpl;
+import com.project.utils.Constants;
+
 import io.swagger.v3.oas.annotations.Operation;
 import lombok.extern.slf4j.Slf4j;
+
+import org.apache.tomcat.util.bcel.Const;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
 import org.springframework.beans.factory.annotation.Autowired;
@@ -19,7 +23,7 @@ import java.util.List;
 @RestController
 public class UserController {
 
-    private static final Logger LOG = LoggerFactory.getLogger(UserServiceImpl.class.getName());
+    private static final Logger LOG = LoggerFactory.getLogger(UserController.class);
 
 
     @Autowired
@@ -33,12 +37,11 @@ public class UserController {
     @PostMapping("/users")
     @Operation(summary = "To add User", tags = "Users")
     public ResponseEntity<User> addUser(@RequestBody UserRequest req) {
-        User user = new User();
-        LOG.info("Request {}",req);
+        LOG.info(Constants.REQUEST,req);
         ResponseEntity<User> response = service.addUser(req);
-        LOG.info("Response {}",response);
+        LOG.info(Constants.RESPONSE,response);
         return response;
-    }
+    } 
 
     /**
      * To get all Users
@@ -50,7 +53,7 @@ public class UserController {
     public ResponseEntity<List<User>> getUsers() {
         LOG.info("Retrieving all the users..");
         ResponseEntity<List<User>> response = service.getAllUsers();
-        LOG.info("Response {}",response);
+        LOG.info(Constants.RESPONSE,response);
         return response;
     }
 
@@ -63,8 +66,7 @@ public class UserController {
     @GetMapping("/users/{id}")
     @Operation(summary = "To retrieve User by Id", tags = "Users")
     public ResponseEntity<User> getUserById(@PathVariable int id) {
-        ResponseEntity<User> response = service.getUserById(id);
-        return response;
+       return service.getUserById(id);
     }
 
     /**
@@ -77,9 +79,9 @@ public class UserController {
     @PutMapping("/users/{id}")
     @Operation(summary = "To update User", tags = "Users")
     public ResponseEntity<User> updateUser(@PathVariable int id, @RequestBody UserRequest req) {
-        LOG.info("Request {}",id,req);
+        LOG.info(Constants.REQUEST ,id,req);
         ResponseEntity<User> response = service.updateUser(id, req);
-        LOG.info("Response {}",response);
+        LOG.info(Constants.RESPONSE,response);
         return response;
     }
 
@@ -91,9 +93,9 @@ public class UserController {
     @DeleteMapping("/users/{id}")
     @Operation(summary = "To delete User", tags = "Users")
     public ResponseEntity<String> deleteUser(@PathVariable int id) {
-        LOG.info("Request {}",id);
+        LOG.info(Constants.REQUEST,id);
         ResponseEntity<String> response = service.deleteUser(id);
-        LOG.info("Response {}",response);
+        LOG.info(Constants.RESPONSE,response);
         return response;
     }
 }

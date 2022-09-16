@@ -2,8 +2,6 @@ package com.project.service;
 
 import java.util.List;
 
-import org.slf4j.Logger;
-import org.slf4j.LoggerFactory;
 import org.springframework.beans.BeanUtils;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.beans.factory.annotation.Value;
@@ -14,6 +12,7 @@ import com.project.dao.UserDao;
 import com.project.dto.UserRequest;
 import com.project.entity.User;
 import com.project.exception.UserNotFoundException;
+import com.project.utils.Constants;
 
 import lombok.extern.slf4j.Slf4j;
 
@@ -35,7 +34,7 @@ public class UserServiceImpl implements UserService {
         User user = new User();
         BeanUtils.copyProperties(req, user);
         User response = dao.save(user);
-        log.info("Response {}", response);
+        log.info(Constants.RESPONSE, response);
         return ResponseEntity.ok(response);
     }
 
@@ -51,15 +50,15 @@ public class UserServiceImpl implements UserService {
     @Override
     public ResponseEntity<User> getUserById(int id) {
 
-        log.info("Request {}", id);
+        log.info(Constants.REQUEST, id);
         User user = new User();
         try {
             user = dao.findById(id).get();
-            log.info("Response {}", id);
+            log.info(Constants.RESPONSE, id);
             return ResponseEntity.ok(user);
         } catch (Exception e) {
-            log.error("User Not Found for id : " , e);
-            throw new UserNotFoundException("User Not Found");
+            log.error(Constants.USERNOTFOUND , id);
+            throw new UserNotFoundException(Constants.USERNOTFOUND);
         }
     }
 
@@ -71,11 +70,11 @@ public class UserServiceImpl implements UserService {
             User user = dao.findById(id).get();
             BeanUtils.copyProperties(req, user);
             user = dao.save(user);
-            log.info("Response {}",user);
+            log.info(Constants.RESPONSE,user);
             return ResponseEntity.ok(user);
         } catch (Exception e) {
-            log.error("User Not Found for id : " + id);
-            throw new UserNotFoundException("User not Found");
+            log.error(Constants.USERNOTFOUND , id);
+            throw new UserNotFoundException(Constants.USERNOTFOUND);
         }
 
     }
@@ -90,8 +89,8 @@ public class UserServiceImpl implements UserService {
             log.info("Deleted successfully");
             return ResponseEntity.ok("Deleted");
         }catch (Exception e){
-            log.error("User Not Found for id : " + id);
-            throw new UserNotFoundException("User not Found");
+            log.error(Constants.USERNOTFOUND + " for id : " + id);
+            throw new UserNotFoundException(Constants.USERNOTFOUND);
         }
 
     }
